@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title>Bukber</title>
+
+	<script type="text/javascript">
+		disp = 1
+
+		function f1() {
+			alert("You: Gasss");
+			alert("Me: Nah Gitu Dong 🥳🥳");
+		}
+
+		function f2() {
+			if (disp == 1) {
+				btn.style.top = 450
+				btn.style.left = 300
+				disp = 2
+			} else if (disp == 2) {
+				btn.style.top = 450
+				btn.style.left = 30
+				disp = 3
+			} else if (disp == 3) {
+				btn.style.top = 500
+				btn.style.left = 300
+				disp = 4
+			} else if (disp == 4) {
+				btn.style.top = 500
+				btn.style.left = 30
+				disp = 1
+			}
+		}
+	</script>
+
+	<style>
+		.btn1 {
+			position: relative;
+			top: 30;
+		}
+
+		.btn2 {
+
+			position: absolute;
+		}
+		.row{
+
+			display: flex;
+			justify-content:center;
+
+		}
+		.container{
+			margin: 20px auto;
+			width: 300px;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Broo Bukber Yokkk!</h1>
+		<img src="bukber.jpg" alt="">
+		<div class=""></div>
+		<div class="row">
+
+			<div class="btn1">
+				<input type="button" value="Gass" onclick="f1()" />
+			</div>
+
+			<div ID="btn" class="btn2">
+
+				<input type="button" value=" Ngga Mau" onMouseOver="f2()" />
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
